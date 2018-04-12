@@ -1,2 +1,2 @@
 # mdayyub.github.io
-Personal Blog
+My personal page on GitHub
