@@ -1,25 +1,50 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="Keywords" content="blog"/>
-    <meta name="Description" content="blog"/>
-    <title>Simple</title>
-    <link rel="shortcut icon" href="/static/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Keywords" content="blog" />
+    <meta name="Description" content="blog" />
+    <title>BNF</title>
+    <style>
+        .pagination li {
+            display: inline-block;
+            padding: 5px;
+        }
+    </style>
+    <style>
+        *,
+        *::before,
+        *::after {
+            animation-play-state: paused !important;
+        }
+    </style>
+    <script>
+        var monkeyList = new List('test-list', {
+            valueNames: ['name'],
+            page: 3,
+            pagination: true
+        });
+    </script>
+    <link rel="shortcut icon" href="/favicon.png" />
     <link rel="stylesheet" type="text/css" href="/main.css" />
 </head>
+
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 
-<div id="easyPaginate">
-    <img src="https://i.imgur.com/cxjvKmj.png" />
-    <img src="https://i.imgur.com/cxjvKmj.png" />	
-    <img src="https://i.imgur.com/3GPyFHk.png" />
-    <img src="https://i.imgur.com/xzXMtZQ.png" />
-</div>
-	
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="jquery.easyPaginate.js"></script>
-
+    <div id="test-list">
+        <input type="text" class="search" />
+        <ul class="list">
+            <li><a class="name" href="https://i.imgur.com/nTgYlGS.png" target="_blank">BANKNIFTY13DEC2018 </a></li>
+            <li><a class="name" href="https://i.imgur.com/cxjvKmj.png" target="_blank">BANKNIFTY29NOV2018 </a></li>
+            <li><a class="name" href="https://i.imgur.com/3GPyFHk.png" target="_blank">BANKNIFTY22NOV2018 </a></li>
+            <li><a class="name" href="https://i.imgur.com/xzXMtZQ.png" target="_blank">BANKNIFTY15NOV2018 </a></li>
+        </ul>
+        <ul class="pagination"></ul>
+    </div>
 </body>
+
 </html>
