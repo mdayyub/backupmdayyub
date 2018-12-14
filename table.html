@@ -1,10 +1,9 @@
 <link rel="stylesheet" href="table.css">
 <script>
-var options = {
-  valueNames: [ 'name', 'born' ]
-};
-
+window.onload = function(){
+var options = {valueNames: [ 'name', 'born' ] };
 var userList = new List('users', options);
+};
 </script>
 <div id="users">
   <input class="search" placeholder="Search" />
