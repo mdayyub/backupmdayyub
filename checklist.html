@@ -1,0 +1,49 @@
+<head>
+    <title>Bank Nifty CheckList</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="css/table.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script>
+        window.onload = function() {
+            var options = {
+                valueNames: ['name', 'born']
+            };
+            var userList = new List('users', options);
+        };
+    </script>
+
+    <head>
+
+        <body>
+            <div id="users">
+                <input class="search" placeholder="Search" />
+                <button class="sort" data-sort="name">
+                    Sort by name
+                </button>
+                <table>
+                    <!-- IMPORTANT, class="list" have to be at tbody -->
+                    <tbody class="list">
+                        <tr>
+                            <td class="born">BQ Podcast</td>
+                            <td class="name"><a href="https://soundcloud.com/bloombergquint/tracks" target="_blank">BQ Podcast</a></td>
+                        </tr>
+                        <tr>
+                            <td class="born">Global Events</td>
+                            <td class="name"><a href="https://in.investing.com/economic-calendar/" target="_blank">Economic Calendar</a></td>
+                        </tr>
+                        <tr>
+                            <td class="born">Sensibull OI</td>                        
+                            <td class="name"><a href="https://trade.sensibull.com/oigraphs?tradingsymbol=BANKNIFTY" target="_blank">Open Interest</a></td>
+                        </tr>
+                        <tr>
+                            <td class="born">Pay-Off Chart</td>
+                            <td class="name"><a href="https://snapalpha.capitalmind.in/stratoptions" target="_blank">Capitalmind SNAP</a></td>
+                        </tr>
+                        <tr>
+                            <td class="name"><a href="https://www.bloombergquint.com/live-tv" target="_blank">BQ Live TV</a></td>
+                            <td class="born">Live TV</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </body>
