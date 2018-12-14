@@ -1,40 +1,49 @@
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-<link rel="stylesheet" href="css/table.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-<script>
-window.onload = function(){
-var options = {valueNames: [ 'name', 'born' ] };
-var userList = new List('users', options);
-};
-</script>
-<div id="users">
-  <input class="search" placeholder="Search" />
-  <button class="sort" data-sort="name">
-    Sort by name
-  </button>
-  <table>
-    <!-- IMPORTANT, class="list" have to be at tbody -->
-    <tbody class="list">
-      <tr>
-        <td class="name"><a href="https://i.imgur.com/nTgYlGS.png" target="_blank">BANKNIFTY13DEC2018</a></td>
-        <td class="born">26816.35</td>
-      </tr>
-      <tr>
-        <td class="name"><a href="https://i.imgur.com/cBkDjkn.png" target="_blank">BANKNIFTY06DEC2018</a></td>
-        <td class="born">26198.30</td>
-      </tr>
-      <tr>
-        <td class="name"><a href="https://i.imgur.com/cxjvKmj.png" target="_blank">BANKNIFTY29NOV2018</a></td>
-        <td class="born">26939.60</td>
-      </tr>
-      <tr>
-        <td class="name"><a href="https://i.imgur.com/cxjvKmj.png" target="_blank">BANKNIFTY22NOV2018</a></td>
-        <td class="born">25999.45</td>
-      </tr>
-      <tr>
-        <td class="name"><a href="https://i.imgur.com/cxjvKmj.png" target="_blank">BANKNIFTY15NOV2018</a></td>
-        <td class="born">26140.00</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<head>
+    <title>Bank Nifty 2018 ED</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="css/table.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script>
+        window.onload = function() {
+            var options = {
+                valueNames: ['name', 'born']
+            };
+            var userList = new List('users', options);
+        };
+    </script>
+
+    <head>
+
+        <body>
+            <div id="users">
+                <input class="search" placeholder="Search" />
+                <button class="sort" data-sort="name">
+                    Sort by name
+                </button>
+                <table>
+                    <!-- IMPORTANT, class="list" have to be at tbody -->
+                    <tbody class="list">
+                        <tr>
+                            <td class="name"><a href="https://i.imgur.com/nTgYlGS.png" target="_blank">BANKNIFTY13DEC2018</a></td>
+                            <td class="born">26816.35</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><a href="https://i.imgur.com/cBkDjkn.png" target="_blank">BANKNIFTY06DEC2018</a></td>
+                            <td class="born">26198.30</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><a href="https://i.imgur.com/cxjvKmj.png" target="_blank">BANKNIFTY29NOV2018</a></td>
+                            <td class="born">26939.60</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><a href="https://i.imgur.com/cxjvKmj.png" target="_blank">BANKNIFTY22NOV2018</a></td>
+                            <td class="born">25999.45</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><a href="https://i.imgur.com/cxjvKmj.png" target="_blank">BANKNIFTY15NOV2018</a></td>
+                            <td class="born">26140.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </body>
