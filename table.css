@@ -6,6 +6,7 @@ EDIT ON
 td {
   padding:10px; 
   border:solid 1px #eee;
+  font-family: 'Roboto Mono', monospace;
 }
 
 input {
