@@ -1,7 +1,5 @@
-HTML  CSS  JS Result
-EDIT ON
  .list {
-  font-family:sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 td {
   padding:10px; 
