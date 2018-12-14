@@ -7,11 +7,9 @@
         }
     </style>
     <script type="text/javascript">
-        var monkeyList = new List('test-list', {
-            valueNames: ['name'],
-            page: 3,
-            pagination: true
-        });
+        window.onload = function(){
+        var monkeyList = new List('test-list', { valueNames: ['name'], page: 3, pagination: true });
+        };
     </script>
 
 <body>
