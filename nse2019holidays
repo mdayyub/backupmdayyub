@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<title>NSEINDIA 2019 Holidays</title>
+			<link rel="stylesheet" href="css/nse2019holidays.css">
+				<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+				<script>
+        window.onload = function() {
+            var options = {
+                valueNames: [ 'date', 'day', 'text']
+            };
+            var userList = new List('calender', options);
+        };
+    </script>
+			</head>
+			<body>
+				<div id="calender">
+					<input class="search" placeholder="Search" />
+					<button class="sort" data-sort="date">
+    Sort by date
+  </button>
+					<table>
+						<tbody>
+							<tr>
+								<th>Date</th>
+								<th>Day</th>
+								<th>Description</th>
+							</tr>
+						</tbody>
+						<!-- IMPORTANT, class="list" have to be at tbody -->
+						<tbody class="list">
+							<tr>
+								<td class="date">March 04, 2019</td>
+								<td class="day">Monday</td>
+								<td class='text'>Mahashivratri</td>
+							</tr>
+							<tr>
+								<td class="date">March 21, 2019</td>
+								<td class="day">Thursday</td>
+								<td class='text'>Holi</td>
+							</tr>
+							<tr>
+								<td class="date">April 17, 2019</td>
+								<td class="day">Wednesday</td>
+								<td class='text'>Mahavir Jayanti</td>
+							</tr>
+							<tr>
+								<td class="date">April 19, 2019</td>
+								<td class="day">Friday</td>
+								<td class='text'>Good Friday</td>
+							</tr>
+							<tr>
+								<td class="date">May 01, 2019</td>
+								<td class="day">Wednesday</td>
+								<td class='text'>Maharashtra Day</td>
+							</tr>
+							<tr>
+								<td class="date">June 05, 2019</td>
+								<td class="day">Wednesday</td>
+								<td class='text'>Id-Ul-Fitr (Ramzan ID)</td>
+							</tr>
+							<tr>
+								<td class="date">August 12, 2019</td>
+								<td class="day">Monday</td>
+								<td class='text'>Bakri Id</td>
+							</tr>
+							<tr>
+								<td class="date">August 15, 2019</td>
+								<td class="day">Thursday</td>
+								<td class='text'>Independence Day</td>
+							</tr>
+							<tr>
+								<td class="date">September 02, 2019</td>
+								<td class="day">Monday</td>
+								<td class='text'>Ganesh Chaturthi</td>
+							</tr>
+							<tr>
+								<td class="date">September 10, 2019</td>
+								<td class="day">Tuesday</td>
+								<td class='text'>Moharram</td>
+							</tr>
+							<tr>
+								<td class="date">October 02, 2019</td>
+								<td class="day">Wednesday</td>
+								<td class='text'>Mahatma Gandhi Jayanti</td>
+							</tr>
+							<tr>
+								<td class="date">October 08, 2019</td>
+								<td class="day">Tuesday</td>
+								<td class='text'>Dasera</td>
+							</tr>
+							<tr>
+								<td class="date">October 28, 2019</td>
+								<td class="day">Monday</td>
+								<td class='text'>Diwali-Balipratipada</td>
+							</tr>
+							<tr>
+								<td class="date">November 12, 2019</td>
+								<td class="day">Tuesday</td>
+								<td class='text'>Gurunanak Jayanti</td>
+							</tr>
+							<tr>
+								<td class="date">December 25, 2019</td>
+								<td class="day">Wednesday</td>
+								<td class='text'>Christmas</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</body>
+		</html>
