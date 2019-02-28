@@ -1,0 +1,68 @@
+<div class="chart-container" style="position: relative; height:40vh; width:80vw">
+<canvas id="myChart"></canvas>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js">
+</script>
+<script>
+var ctx = document.getElementById("myChart").getContext("2d");
+Chart.defaults.global.legend.display = false;
+
+var myChart = new Chart(ctx, {
+  type: "bar",
+  data: {
+    labels: [
+      "10-Dec-2018",
+      "11-Oct-2018",
+      "05-Oct-2018",
+      "04-Oct-2018",
+      "02-Feb-2018",
+      "11-Nov-2016",
+      "11-Feb-2016",
+      "24-Aug-2015",
+      "06-May-2015",
+      "06-Jan-2015",
+      "03-Sep-2013",
+      "16-Aug-2013"
+    ],
+    datasets: [
+      {
+        label: "Nifty was down by ",
+        data: [-205.25, -225.45, -282.8, -259, -256.3, -229.45, -239.35, -490.95, -227.8, -251.05, -209.3, -234.45],
+        backgroundColor: [
+          "purple",
+          "maroon",
+          "darkblue",
+          "darkgreen",
+          "skyblue",
+          "orange",
+          "yellow",
+          "red",
+          "gold",
+          "brown",
+          "silver",
+          "pink"
+        ],
+        borderWidth: []
+      }
+    ]
+  },
+  options: {
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: false
+          }
+        }
+      ],
+      xAxes: [
+        {
+          gridLines: {
+            display: false
+          }
+        }
+      ]
+    }
+  }
+});
+</script>
